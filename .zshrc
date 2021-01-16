@@ -1,8 +1,8 @@
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/home/victoria/.oh-my-zsh"
+export ZSH=$HOME/.oh-my-zsh
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -68,7 +68,11 @@ ENABLE_CORRECTION="true"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-autosuggestions zsh-syntax-highlighting zsh-z)
+plugins=(
+	git
+	zsh-autosuggestions
+	zsh-syntax-highlighting
+)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -98,8 +102,6 @@ source $ZSH/oh-my-zsh.sh
 alias zshconfig="sudo nano ~/.zshrc"
 alias docs="cd Documentos"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias 7="cd ~/Documentos/7mo && ls -la"
-alias 1="cd ~/Documentos/7mo/Prog.\ Internet && ls-la"
 alias samurai="cd ~/Documentos/samurai"
 alias cemie="cd ~/Documentos/cemie"
 
