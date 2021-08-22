@@ -104,4 +104,16 @@ alias docs="cd Documentos"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias samurai="cd ~/Documentos/samurai"
 alias cemie="cd ~/Documentos/cemie"
+alias wr="wrangler"
+alias pgstart="sudo service postgresql start"
+alias piñata="cd ~/Documentos/Piñata"
+alias satin="cd ~/Documentos/Piñata/satin"
+alias vueshi="cd ~/Documentos/samurai/vueshi"
+alias samurai-api="cd ~/Documentos/samurai/samurai-api"
+alias gls="git branch -l | cat"
+alias centinela="cd ~/Documentos/Piñata/www"
+
+# RubyGems on a folder (see https://jekyllrb.com/docs/installation/ubuntu/)
+export GEM_HOME="$HOME/gems"
+export PATH="$HOME/gems/bin:$PATH"
 
