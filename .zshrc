@@ -69,6 +69,7 @@ ENABLE_CORRECTION="true"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
+	asdf
 	git
 	zsh-autosuggestions
 	zsh-syntax-highlighting
@@ -100,20 +101,29 @@ source $ZSH/oh-my-zsh.sh
 #
 # Example aliases
 alias zshconfig="sudo nano ~/.zshrc"
-alias docs="cd Documentos"
+alias docs="cd Documents"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias samurai="cd ~/Documentos/samurai"
-alias cemie="cd ~/Documentos/cemie"
+alias cemie="cd ~/Documents/cemie"
 alias wr="wrangler"
 alias pgstart="sudo service postgresql start"
-alias piñata="cd ~/Documentos/Piñata"
-alias satin="cd ~/Documentos/Piñata/satin"
-alias vueshi="cd ~/Documentos/samurai/vueshi"
-alias samurai-api="cd ~/Documentos/samurai/samurai-api"
+alias piñata="cd ~/Documents/Piñata"
+alias satin="cd ~/Documents/Piñata/satin"
+alias vueshi="cd ~/Documents/Piñata/vueshi"
+alias samurai-api="cd ~/Documents/Piñata/samurai-api"
 alias gls="git branch -l | cat"
-alias centinela="cd ~/Documentos/Piñata/www"
+alias centinela="cd ~/Documents/Piñata/www"
+alias zaturna="cd ~/Documents/Ilum/zaturna-api"
+alias casino="cd ~/Documents/LC/casino.mx/client"
+alias chile="cd ~/Documents/LC-Chile/casino.cl/client"
+alias brasil="cd ~/Documents/LC-Brasil/gaming-casino.com.br/client"
+alias peru="cd ~/Documents/LC-Peru/casino.pe/client"
+alias ccl="cd ~/Documents/LegendCorp/LC-CCL/casino.cl/client"
+alias cbr="cd ~/Documents/LegendCorp/LC-CBR/gaming-casino.com.br/client"
+alias cin="cd ~/Documents/LegendCorp/LC-CIN/casino.in/client"
+alias ocscom="cd ~/Documents/LegendCorp/LC-OCSCOM/launch.onlinecasinos.com/client"
 
-# RubyGems on a folder (see https://jekyllrb.com/docs/installation/ubuntu/)
-export GEM_HOME="$HOME/gems"
-export PATH="$HOME/gems/bin:$PATH"
-
+# RubyGems on a folder (see https://jekyllrb.com/docs/installation/macos/)
+export PATH="$HOME/.gem/ruby/2.6.0/bin:$PATH"
+export PATH="/usr/local/opt/ruby/bin:/usr/local/lib/ruby/gems/3.0.0/bin:$PATH"
+eval "$(rbenv init -)"
+eval "$(~/bin/rtx activate zsh)"
